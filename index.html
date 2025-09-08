@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <main> 
+        <img src="carrinho.jpg" width="400" height="400" alt="sacola de compras"/>
+        <form>
+            <input class = "input-item" id = "input-item" type="text" 
+    placeholder="Digite o item que deseja adicionar"/>
+            <button class = "button-item" id = "adicionar-item"
+    type = "button">Adicionar ao carrinho</button>
+        </form>
+
+    <!-- Região onde serão exibidos os itens adicionados na lista -->
+        <div class = "container-lista">
+            <h2>Lista de compras</h2>
+            <hr/>
+            <ul id = "lista-de-compras"> <!-- Lista não ordenada -->
+                <p class = "mensagem-lista-vazia">Não há nenhum item na 
+                    lista</p>
+            </ul>
+        </div>    
+    </main>
+    <!-- module permite que os scripts possam ser divididos em arquivos -->
+     <script type = "module" src = "index.js"></script>
+</body>
+</html>
